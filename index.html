@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Family Guy Funny Moments Dark Humor</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #f9f9f9;
+    }
+
+    /* Header */
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: #202020;
+      color: white;
+      padding: 10px 20px;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: red;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .logo span { font-size: 30px; }
+
+    .search-bar {
+      flex-grow: 2;
+      margin-left: 20px;
+    }
+
+    .search-bar input {
+      width: 80%;
+      padding: 6px 10px;
+      font-size: 16px;
+      border-radius: 20px;
+      border: 1px solid #ccc;
+    }
+
+    .user-icon {
+      width: 35px;
+      height: 35px;
+      border-radius: 50%;
+      background-color: #ccc;
+    }
+
+    /* Main content */
+    .content {
+      display: flex;
+      padding: 20px;
+      gap: 20px;
+    }
+
+    /* Video section */
+    .video-section {
+      flex: 3;
+    }
+
+    .video-player {
+      width: 100%;
+      height: 480px;
+      background-color: #000;
+      position: relative;
+      background-image: url('https://img.youtube.com/vi/Z7Ra8Wa-WMI/hqdefault.jpg');
+      background-size: cover;
+      background-position: center;
+    }
+
+    .play-button {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 80px;
+      color: white;
+      opacity: 0.7;
+    }
+
+    .video-info {
+      margin-top: 15px;
+    }
+
+    .video-title {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .video-meta {
+      color: #606060;
+      font-size: 14px;
+      margin: 5px 0;
+    }
+
+    .video-buttons {
+      display: flex;
+      gap: 15px;
+      margin: 10px 0;
+    }
+
+    .yt-button {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      background-color: #e8e8e8;
+      padding: 8px 16px;
+      border-radius: 20px;
+      cursor: pointer;
+      border: none;
+    }
+
+    .yt-button img {
+      width: 20px;
+      height: 20px;
+    }
+
+    /* Sidebar section */
+    .sidebar {
+      flex: 1;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+    }
+
+    .recommended {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 15px;
+      cursor: pointer;
+    }
+
+    .rec-thumbnail {
+      width: 120px;
+      height: 68px;
+      background-color: #aaa;
+      background-image: url('https://i.pinimg.com/originals/fe/f4/87/fef48766d04a682cf78efc9f08e6497f.jpg');
+      background-size: cover;
+      background-position: center;
+      border-radius: 5px;
+    }
+
+    .rec-details {
+      font-size: 14px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .rec-title {
+      font-weight: bold;
+    }
+
+    .rec-meta {
+      color: #606060;
+    }
+
+    /* Comments Section */
+    .comment {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 12px;
+    font-family: Arial, sans-serif;
+  }
+
+  .profile-pic {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: #ccc;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    text-transform: uppercase;
+  }
+
+  .comment-content {
+    background-color: #f1f1f1;
+    padding: 8px 12px;
+    border-radius: 12px;
+    max-width: 600px;
+  }
+
+  .comment-username {
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 4px;
+  }
+
+  .comment-text {
+    font-size: 14px;
+  }
+   .comment-like {
+  font-size: 12px;
+  color: #606060;
+  margin-left: 10px;
+}
+
+.comment-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+    /* Formatting for responsive layout */
+    @media (max-width: 768px) {
+      .content {
+        flex-direction: column;
+      }
+
+      .sidebar {
+        margin-top: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo"><span>▶️</span>RotTube</div>
+    <div class="search-bar">
+      <input type="text" placeholder="Search" />
+    </div>
+    <div class="user-icon"></div>
+  </header>
+
+  <!-- Content Section -->
+  <div class="content">
+  <!-- Video Section -->
+  <div class="video-section">
+    <div class="video-player">
+      <div class="play-button">▶</div>
+    </div>
+    <div class="video-info">
+      <div class="video-title">AI Slolp</div>
+      <div class="video-meta">
+        <span id="viewCount">0</span> views • <span id="subCount">0</span> subscribers
+      </div>
+      <div class="video-meta">
+        Posted by <strong>AIGuy</strong>
+      </div>
+      <div class="video-buttons">
+        <button class="yt-button" id="like-btn">
+          <img src="https://img.icons8.com/ios-filled/50/000000/thumb-up.png" />
+          <span id="likeCount">0</span>
+        </button>
+        <button class="yt-button" id="dislike-btn">
+          <img src="https://img.icons8.com/ios-filled/50/000000/thumbs-down.png" />
+          <span id="dislikeCount">0</span>
+        </button>
+      </div>
+
+      <!-- Comment Section -->
+      <div class="comments-section">
+        <div id="comments" style="max-height: 300px; overflow: hidden; padding-top: 16px;">
+          <!-- Comments populate here -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sidebar (Now Correctly Outside) -->
+  <div class="sidebar">
+  <div class="video-thumb">
+    <img src="https://img.youtube.com/vi/vTfD20dbxho/mqdefault.jpg" alt="Subway Surfers AITA">
+    <div class="thumb-title">new subway surfers AITA</div>
+  </div>
+  <div class="video-thumb">
+    <img src="https://img.youtube.com/vi/mn-Tlb_wfjc/mqdefault.jpg" alt="Dark Peter Moment">
+    <div class="thumb-title">Peter caught lacking in 4K 💀</div>
+  </div>
+  <div class="video-thumb">
+    <img src="https://img.youtube.com/vi/JAXLwVXtgF4/mqdefault.jpg" alt="Stewie Moment">
+    <div class="thumb-title">Stewie goes full villain mode</div>
+  </div>
+  <div class="video-thumb">
+    <img src="https://img.youtube.com/vi/dQw4w9WgXcQ/mqdefault.jpg" alt="Never Gonna Cutaway">
+    <div class="thumb-title">Peter sings Rick Astley unironically</div>
+  </div>
+  <div class="video-thumb">
+    <img src="https://img.youtube.com/vi/fb3RYUCjb9Y/mqdefault.jpg" alt="Quagmire Unhinged">
+    <div class="thumb-title">Quagmire goes too far again</div>
+  </div>
+</div>
+
+
+
+  <!-- Script for View, Like, Subscriber Updates -->
+  <script>
+    let views = 1;
+    let subs = 1;
+    let likes = 1;
+    let dislikes = 0;
+
+    function updateCounts() {
+      // View and like increments
+      let viewIncrement = Math.floor(25 + Math.log(views))*800;
+      views += viewIncrement;
+
+      // Subscribers grow slower
+      subs+=Math.floor(10+Math.log10(subs))*100;
+
+      // Likes and dislikes increment
+      if (Math.random() < 0.7) likes += Math.floor(5 + Math.log10(likes))*25;
+      if (Math.random() < 0.1) dislikes++;
+
+      // Update on screen
+      document.getElementById("viewCount").textContent = views.toLocaleString();
+      document.getElementById("subCount").textContent = subs.toLocaleString();
+      document.getElementById("likeCount").textContent = likes.toLocaleString();
+      document.getElementById("dislikeCount").textContent = dislikes.toLocaleString();
+    }
+
+    setInterval(updateCounts, 180);
+  
+const usernames = [
+  "StewieSimp44",
+  "DarkGriffinClips",
+  "QuahogChaos",
+  "GiggleGiggity",
+  "CutawayKing",
+  "PeterGotWiFi",
+  "YeetTheBaby",
+  "MegMomentz",
+  "EvilMonkeyIRL",
+  "LoisLover99",
+  "JoeSwoleson",
+  "HerbertSings",
+  "FlashbackFan",
+  "DrunkenChicken",
+  "BrianAteMyEssay",
+  "RoadhouseTime",
+  "ConsuelaNoNo",
+  "ChrisCrybaby",
+  "GlenQuagmeme",
+  "DeathCameoGuy",
+  "QuagTalksAI",
+  "Peter69",
+  "StewieTheGoat",
+  "BrianSniffsTruth",
+  "Lois2Woke",
+  "MegInShadows",
+  "ClevelandRizzler",
+  "AIcutaway",
+  "FamilyGPT",
+  "darkhumor69420",
+  "ChickenBeefEp6",
+  "GiggityFanXD",
+  "NotGriffinApproved",
+  "JokerMoments",
+  "AITA4Laughing",
+  "SkibidiVsStewie",
+  "QuagmireInOhio",
+  "TheRealJoeSwanson",
+  "DeepFryStewie",
+  "AI4President",
+  "LoisLeftMeAgain",
+  "MemeJudgeJudy",
+  "CutawayAddict",
+  "PeterSuesGod",
+  "GoofyGooberJudge",
+  "QuahogKing420", "LoisLover69", "AIinDenial", "AITA4ThisJoke", "GiggityGang", "SussyPeter", "MegDeservedIt",
+  "MayorWestFan", "AI_Spambot", "CutawayConnoisseur", "JoeSwag", "MortIsBased", "ClevelandSlaps", "LoreDropper",
+  "EvilStewie", "ChickenFightFan", "GadgetGriffin", "PeakedAtSeason4", "DarkModeDweller", "FamilyGuyPhilosopher",
+  "StewieSigma", "MILFQuagmire", "PeterGriffinStan", "BrianToastFan", "LoisWasRight", "WokeMeg", "SpookyAI",
+  "OnlyCommentsOnce", "RoadhouseRealist", "YTOnRepeat", "PeterSaidTransRights", "FunnyBoneFracture", "TheCutawayKing",
+  "MorallyConfused", "DeepFriedJoe", "BroSaidGiggedy", "AIBuiltThisHouse", "GriffinLoreExpert", "UncannyLaughter",
+  "CancelledInQuahog", "YoureTheVillain", "DownvotedToHeck", "DarkerThanExpected", "FlashbackEnjoyer",
+  "PeterGriffinIRL", "LaughThenThink", "YTPRemixer", "DogWithABlogGPT", "DarkMemeDealer", "FamilyGuyInHell"
+];
+
+const comments = [
+  "Nah Stewie really said ✨murder✨ like it was nothing 💀",
+  "This clip is why I can't watch Family Guy in public 😂",
+  "Peter survives more trauma than GTA protagonists",
+  "Dark humor in this episode had me reevaluating life ☠️",
+  "When Brian started quoting Nietzsche I actually wheezed",
+  "This ain't even a cutaway this is just trauma LMAO",
+  "They got away with this on TV?? 💀💀💀",
+  "Lois just took the L and moved on 💅 respect",
+  "Griffin family therapy sessions be like 💣🛋️",
+  "This is the episode that made my mom block Fox",
+  "Bro the chicken fight has more lore than Marvel",
+  "Stewie could actually beat Thanos with prep time",
+  "Quagmire's history is a war crime compilation",
+  "How is Meg still alive in this timeline 😭",
+  "That roadhouse kick was *too* satisfying",
+  "Herbert showing up like 😳 ‘you dropped this’",
+  "Why is Peter built like that in every timeline",
+  "Chris just accepted his fate and vibed lol",
+  "Consuela carried this episode ngl",
+  "Family Guy logic: gravity optional",
+  "Bro this felt like a literal Family Guy cutaway 💀",
+  "Can we get an AI Peter Griffin to narrate this?",
+  "I laughed so hard I turned into Joe Swanson for a second",
+  "Dark humor? I barely even know her!",
+  "AITA for showing this to my grandma and now she thinks I'm possessed?",
+  "This is what happens when you give Stewie GPT-4 access",
+  "Meg would not survive this timeline",
+  "I paused this video and now Quagmire is just staring into my soul",
+  "The chicken fight had better pacing than Marvel Phase 4",
+  "Lois left Peter for ChatGPT and now I’m scared",
+  "This video just unlocked a core memory of watching FG at 2am",
+  "If Peter did stand-up, this would be his Netflix special",
+  "Joe Swanson speedran this comment section",
+  "I showed this to my AI and it filed for emancipation",
+  "The way Stewie talks here… peak Sigma energy",
+  "AITA for thinking the AI jokes were actually better than the real ones?",
+  "This isn’t just Family Guy, it’s **Philosophy Guy**",
+  "Quagmire probably coded this video in Unity during a giggity",
+  "They predicted this episode back in 2007 fr fr",
+  "Why does this remind me of Ohio memes + FG + 3am TikToks",
+  "Imagine watching this high and thinking Stewie’s real",
+  "Peter Griffin is my emotional support degeneracy enabler",
+  "This channel is what happens when ChatGPT gets bored",
+  "GiggityGPT needs to be a thing, someone make it",
+  "Cutaway jokes? Nah, these are escape room jokes",
+  "Who else got a jump scare from Peter saying 'Moist'?",
+  "I showed this to my AI and it achieved sentience just to unsubscribe.",
+  "Cutaway gags cured my depression then gave it back.",
+  "AITA for laughing at the joke about Brian dying again?",
+  "Lois saying 'Peter no!' is my sleep paralysis demon.",
+  "Why does every Family Guy clip look like a war crime in Ohio?",
+  "This gave my toaster WiFi and it’s now watching too.",
+  "Dark humor? More like pitch black with a Quagmire punchline.",
+  "Bro Peter's laugh activated my fight-or-flight.",
+  "AITA for thinking Stewie’s evil arc was kinda valid?",
+  "I miss when Family Guy was just about inappropriate chickens.",
+  "This feels like a fever dream produced by ChatGPT.",
+  "Peter really said ‘Giggity’ and my soul left my body.",
+  "Bro the cutaway to 1940s Germany was WILDLY unnecessary.",
+  "Lois looked straight at me. I’m scared.",
+  "Peter vs. Chicken deserves an Oscar tbh.",
+  "Imagine explaining this scene to a time traveler from 2005.",
+  "They really made a joke so dark even my AI paused.",
+  "Commenting before this gets age-restricted.",
+  "Family Guy is just AI-generated humor with a budget.",
+  "Brian is the only sane one and even he’s unhinged now.",
+  "This is what happens when you feed a neural net Red Bull.",
+  "Stewie has better monologues than Shakespeare.",
+  "Family Guy invented multiverse theory with that one episode.",
+  "Bro really said ‘Lois I accidentally annexed Poland’ 💀",
+  "Is Peter the villain or the protagonist? Yes.",
+  "This episode predicted the downfall of humanity.",
+  "When Stewie said 'Victory is mine!' I felt that.",
+  "This scene had the same energy as a cursed TikTok live.",
+  "Is it weird this clip made me nostalgic for 2009?",
+  "My FBI agent definitely thinks I'm unstable now.",
+  "I want what Peter has (brain damage).",
+  "The way this escalated so fast made my dog speak Latin.",
+  "This has the same vibe as a bootleg video game ad.",
+  "Giggity was not the word for that scene.",
+  "The silence after the joke hit harder than it should’ve.",
+  "This comment section is more scripted than Season 19.",
+  "Stewie just committed tax fraud in HD.",
+  "Lois yelling ‘Peter!’ is the national anthem of chaos.",
+  "This is like Black Mirror but with farts.",
+  "I didn’t laugh. I barked. Loudly.",
+  "What do you MEAN this was a real aired episode??",
+  "This show goes from 0 to existential dread fast.",
+  "This gave me emotional damage and I liked it.",
+  "That cutaway gag just insulted 3 continents.",
+  "Peter Griffin is my sleep therapist now.",
+  "Bro this is funnier than it has any right to be.",
+  "Every Family Guy frame is a cursed image.",
+  "Quagmire is banned in 14 states for this episode.",
+  "I watched this and my sense of reality bent.",
+  "This scene made me both laugh and question morality."
+];
+
+
+  function getRandomColor(name) {
+    const colors = [
+  "#1E88E5", // Blue
+  "#D81B60", // Pink
+  "#43A047", // Green
+  "#F4511E", // Orange
+  "#8E24AA", // Purple
+  "#00ACC1", // Teal
+  "#FB8C00", // Deep Orange
+  "#3949AB"  // Indigo
+];
+
+    let hash = 0;
+    for (let i = 0; i < name.length; i++) hash = name.charCodeAt(i) + ((hash << 5) - hash);
+    return colors[Math.abs(hash) % colors.length];
+  }
+
+  function addComment() {
+  const name = usernames[Math.floor(Math.random() * usernames.length)];
+  const commentText = comments[Math.floor(Math.random() * comments.length)];
+
+  const comment = document.createElement("div");
+  comment.className = "comment";
+
+  const profile = document.createElement("div");
+  profile.className = "profile-pic";
+  profile.style.backgroundColor = getRandomColor(name);
+  profile.textContent = name.charAt(0);
+
+  const content = document.createElement("div");
+  content.className = "comment-content";
+
+  const username = document.createElement("div");
+  username.className = "comment-username";
+  username.textContent = name;
+
+  const text = document.createElement("div");
+  text.className = "comment-text";
+  text.textContent = commentText;
+
+  // Likes section
+  const likes = document.createElement("div");
+  likes.className = "comment-likes";
+  const likeIcon = document.createElement("span");
+  likeIcon.textContent = "👍";
+  const likeCount = document.createElement("span");
+  likeCount.textContent = " " + (Math.floor(Math.random() * 50) + 1); // 1 to 50 likes
+  likes.appendChild(likeIcon);
+  likes.appendChild(likeCount);
+
+  // Append children
+  content.appendChild(username);
+  content.appendChild(text);
+  content.appendChild(likes);
+  comment.appendChild(profile);
+  comment.appendChild(content);
+
+  const commentsContainer = document.getElementById("comments");
+  commentsContainer.appendChild(comment);
+
+  if (commentsContainer.children.length > 6) {
+    commentsContainer.removeChild(commentsContainer.children[0]);
+  }
+}
+
+
+  setInterval(addComment, 2500); // Add a new comment every 2.5 seconds
+  </script>
+   </body>
+</html>
